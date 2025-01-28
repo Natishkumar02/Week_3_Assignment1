@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natish Kumar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .about, .projects {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #f4f4f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        nav a:hover {
+                        background-color: #f9e003;
+                        transition: background-color 0.3s ease;
+                    }
+        .skills {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills li {
+            background: #f4f4f9;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+       
+         .skills li:hover {
+                background-color: #f56708;
+                transition: background-color 0.3s ease;
+         }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Natish Kumar</h1>
+        <p>Computer Software and Database Development Student at Loyalist College, Toronto</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Natish from India. I completed my graduation in Computer Science and currently studying Computer Software and Database Development at Loyalist College, Toronto.
+         I have a passion for coding and love to learn new technologies. In my free time, I enjoy working on personal projects and contributing to open-source communities. My goal is to become a full-stack developer and work on innovative projects that make a difference.</p>
+        </section>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>GoLang</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>My project 1 is to install GoLang, operate GoLang, and code simple Go code.</p>
+                <a href="https://github.com/Natishkumar02/Natish_Kumar_CSDD1008">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p> My project 2 is a Go application that counts the number of vowels in a given string. It includes unit tests to ensure the accuracy of the vowel counting functionality.</p>
+                <a href="https://github.com/Natishkumar02/CSDD1008_Week12">View on GitHub</a>
+            </div>
+    </div>
+    <footer>
+        <p>Contact: natishKumar@Loyalistcollege.com</p>
+    </footer>
+</body>
+</html>
